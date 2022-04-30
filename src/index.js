@@ -1,24 +1,24 @@
-/* eslint-disable func-names */
 /* eslint-disable no-param-reassign */
+/* eslint-disable func-names */
+
 const navLinks = document.querySelectorAll('.nav__link');
 const dropdowns = document.querySelectorAll('.dropdown');
 
-const close = () => {
+function close() {
   dropdowns.forEach((dropdown) => {
     dropdown.style.display = 'none';
   });
-};
+}
 
-navLinks.forEach((navLink) => {
-  navLink.addEventListener('click', function (e) {
-    const dropdownMenu = this.nextElementSibling;
-    let { display } = dropdownMenu.style;
+navLinks.forEach((link) => {
+  link.addEventListener('click', function (e) {
+    const dropMenu = this.nextElementSibling;
 
-    if (display === 'block') {
-      display = 'none';
+    if (dropMenu.style.display === 'block') {
+      dropMenu.style.display = 'none';
     } else {
       close();
-      display = 'block';
+      dropMenu.style.display = 'block';
       e.stopPropagation();
     }
   });
