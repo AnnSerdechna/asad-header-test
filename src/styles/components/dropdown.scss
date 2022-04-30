@@ -1,0 +1,25 @@
+.dropdown {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+
+  position: absolute;
+
+  &__link {
+    padding: 15px 20px;
+    color: $c-accent;
+    transition: color 300ms;
+    font-family: $ff-main;
+    font-size: 14px;
+    font-weight: bold;
+    width: max-content;
+
+    &:hover {
+      color: $c-active;
+    }
+  }
+}
+
+.dropdown.visible {
+  display: block;
+}
