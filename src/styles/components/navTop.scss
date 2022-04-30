@@ -1,0 +1,30 @@
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $c-accent;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding: 4px 12px;
+    color: $c-white;
+    font-size: 11px;
+    font-family: $ff-main;
+    font-weight: 300;
+    transition: background-color 300ms;
+
+
+    &-icon {
+      padding: 4px 7px;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: $c-active;
+    }
+  }
+}
