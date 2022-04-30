@@ -1,23 +1,18 @@
 .header {
   &__searchBtn {
-    padding: 7px 20px 6px 12px;
+    padding: 6px 20px 6px 12px;
     outline: none;
     border: none;
     background-color: transparent;
     cursor: pointer;
     transition: background-color 300ms;
 
-    //FIXME
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .fa-magnifying-glass {
+      color: #fff;
+    }
 
     &:hover {
       background-color: $c-active;
     }
-
-    // &-icon {
-    
-    // }
   }
 }

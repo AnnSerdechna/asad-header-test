@@ -21,13 +21,10 @@
     font-weight: 300;
     transition: background-color 300ms;
 
+
     &-icon {
-      padding: 5px 7px;
-      
-      // img {
-      //   width: 20px;
-      //   height: 20px;
-      // }
+      padding: 4px 7px;
+      font-size: 16px;
     }
 
     &:hover {
@@ -35,3 +32,12 @@
     }
   }
 }
+
+// .fa-magnifying-glass {
+//   color: red;
+//   cursor: pointer;
+// }
+
+// .fa-facebook {
+//   color: blue;
+// }
