@@ -3,9 +3,12 @@
 @import './utils/mixin';
 @import './utils/reset';
 @import './utils/variables';
+@import './components/UI/input.scss';
+@import './components/UI/button.scss';
 @import './components/page.scss';
 @import './components/dropdown.scss';
 @import './components/header.scss';
 @import './components/navTop.scss';
+@import './components/form.scss';
 @import './components/nav.scss';
 @import './block/container.scss';

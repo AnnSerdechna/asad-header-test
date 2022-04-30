@@ -94,15 +94,36 @@
               </a>
             </li>
           </ul>
-          <button class="header__searchBtn" type="button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+
+          <div class="page__search">
+            <button 
+              class="button navTop__searchBtn" 
+              type="button"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <form class="searchForm page__searchForm">
+              <input
+                class="input searchForm__input"
+                type="text" 
+                placeholder="Search..." 
+                autocomplete="on"
+              />
+              <button 
+                class="button searchForm__button"
+                type="submit"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
         </nav>
 
         <div class="container__content">
           <nav class="nav">
             <a 
-              class="nav__logo-link"
+              class="nav__logo"
               href="https://acad.org/" 
               target="_blank" 
               title="ACAD" 

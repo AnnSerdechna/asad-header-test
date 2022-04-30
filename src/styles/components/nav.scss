@@ -2,6 +2,14 @@
   display: flex;
   justify-content: space-between;
 
+  &__logo {
+    display: block;
+
+    &-img {
+      object-fit: contain;
+    }
+  }
+
   &__list {
     display: flex;
     align-items: center;
