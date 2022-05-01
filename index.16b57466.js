@@ -1,2 +1,2 @@
-
+const e=document.querySelector(".navTop__searchBtn"),n=document.querySelector(".searchForm"),t=document.querySelectorAll(".nav__link"),l=document.querySelectorAll(".dropdown");function o(){l.forEach((e=>{e.style.display="none"}))}e.addEventListener("click",(()=>{n.classList.toggle("visible")})),t.forEach((e=>{e.addEventListener("click",(function(e){const n=this.nextElementSibling;"block"===n.style.display?n.style.display="none":(o(),n.style.display="block",e.stopPropagation())}))})),window.addEventListener("click",(()=>{o()}));
 //# sourceMappingURL=index.16b57466.js.map
