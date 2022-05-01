@@ -1,6 +1,10 @@
 .nav {
-  display: flex;
+  display: none;
   justify-content: space-between;
+
+  @include onDesktop {
+    display: flex;
+  }
 
   &__logo {
     display: block;

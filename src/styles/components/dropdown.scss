@@ -1,18 +1,19 @@
 .dropdown {
-  position: absolute;
   display: none;
+  position: absolute;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   animation: dropdown 300ms ease-in;
 
   &__link {
     padding: 15px 20px;
+    width: max-content;
     color: $c-accent;
-    transition: color 300ms;
     font-family: $ff-main;
     font-size: 14px;
     font-weight: bold;
-    width: max-content;
+    transition: color 300ms;
 
     &:hover {
       color: $c-active;
@@ -22,7 +23,7 @@
 
 @keyframes dropdown {
   0% {
-    transform: translateY(50px);
+    transform: translateY(30px);
     opacity: 0;
   }
 
