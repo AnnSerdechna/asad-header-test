@@ -12,3 +12,9 @@
 @import './components/form.scss';
 @import './components/nav.scss';
 @import './block/container.scss';
+
+aside {
+  background-color: $c-accent;
+  width: 50vw;
+  height: 100vh;
+}

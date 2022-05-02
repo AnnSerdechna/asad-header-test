@@ -1,26 +1,34 @@
 .searchForm {
   display: none;
+  // justify-content: center;
+  gap: 5px;
+  // min-width: 50vw;
   padding: 0;
+  background-color: $c-white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   animation: form 300ms;
- 
-  min-width: 50vw;
+  justify-content: space-between;
 
+//   @include onDesktop {
+  //   }
+  
   @include onDesktop {
-    min-width: 15vw;
-    padding: 15px 10px;
+    justify-content: center; 
+    width: max-content;
+    // min-width: 15vw;
+    // padding: 15px 10px;
   }
 
   &__input {
+    padding: 24px;
     color: $c-grey;
     font-family: $ff-main;
     font-size: 18px;
-    padding: 24px;
 
     @include onDesktop {
+      padding: 20px 10px;
       font-size: 12px;
-      padding: 0;
     }
   }
 
@@ -37,9 +45,9 @@
     }
     
     @include onDesktop {
+      padding: 0 10px;
       color: $c-grey;
       font-size: 14px;
-      padding: 0;
 
       &:hover {
         background-color: $c-white;
@@ -48,14 +56,14 @@
   }
 }
 
-.searchForm.visible {
-  display: flex;
-  justify-content: space-between;
+// .searchForm.visible {
+//   display: flex;
+//   justify-content: space-between;
 
-  @include onDesktop {
-    justify-content: center; 
-  }
-}
+//   @include onDesktop {
+//     justify-content: center; 
+//   }
+// }
 
 @keyframes form {
   0% {
